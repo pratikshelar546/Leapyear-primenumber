@@ -18,18 +18,34 @@ body{
     margin: 0px;
 }
 .bulltes{
-    text-decoration: none;
-    list-style: none;
+    
+    /* list-style: none; */
     display: inline;
-    padding: 0rem 0.5rem;
+   margin: 1rem;
+    font-weight: bold;
+   color: white;
+   padding: 1rem;
+   background-color: var(--background-color);
+   border-radius: 25px;
+ 
+   font-size: 15px;
+}
+.deco{
+    text-decoration: none;
+    color: white;
+
 }
 .container{
     text-align: center;
     padding: 1rem;
+    font-weight: bold;
+    font-size: 20px;
 }
 .dates{
     margin: 0px;
     text-align: center;
+    color: var(--navbar-color);
+    border-style: none;
     
 }
 .input{
@@ -39,8 +55,8 @@ body{
 }
 .click{
     background-color: var(--navbar-color);
-    width: 8rem;
-    height: 2rem;
+    width: 11rem;
+    height: 3rem;
     border-radius: 20px;
     border: none;
     margin:1rem;
@@ -51,8 +67,11 @@ body{
     margin: 1rem;
     border: none;
     border-radius: 20px;
+    background-color: var(--navbar-color);
+    
     text-align: center;
 }
 .nameot{
-    
+    padding-bottom: 1rem;
+    margin: auto;
 }

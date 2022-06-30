@@ -8,7 +8,7 @@ var nameout = document.querySelector("#nameot");
 
 // }
 userName.addEventListener("input", function(){
-nameout.innerHTML = `${userName.value}, heyy how are you`
+nameout.innerHTML = `Hello ${userName.value}, hope your are doing good! Enter your Birth date to check you born in leap year or not`
 })
 
 btn.addEventListener(
@@ -16,6 +16,9 @@ btn.addEventListener(
     function eventhandler() {
       nameout.innerHTML = userName.value;
     let input = date.value;
+    if(userName.value===0){
+        alert("Please enter your name")
+    }
     if (date.value.lenght === 0) {
       alert("plese enter date first");
     } else {
@@ -26,14 +29,14 @@ btn.addEventListener(
       let currentYear = currentDate.getFullYear();
       if (year >= 1000 && year <= currentYear) {
         if (year % 400 === 0 || year % 4 === 0) {
-          divot.innerHTML = "you are born in leap year";
-          console.log("you are born in leap year");
+          divot.innerHTML = `${userName.value},you are born in leap year`;
+        
         } else if (year % 100 === 0) {
-          divot.innerHTML = "you are not born in sss leap year";
-          // console.log("you are not born in sss leap year");
+          divot.innerHTML = `${userName.value},you are not born in leap year`;
+          
         } else {
-          divot.innerHTML = "you are not born in sss leap year";
-          // console.log("your not born in leap year");
+          divot.innerHTML = `${userName.value},you are not born in leap year`;
+       
         }
       }
     }
