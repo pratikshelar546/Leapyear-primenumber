@@ -8,14 +8,16 @@ var nameout = document.querySelector("#nameot");
 
 // }
 userName.addEventListener("input", function(){
-nameout.innerHTML = `Hello ${userName.value}, hope your are doing good! Enter your Birth date to check you born in leap year or not`
+  nameout.innerHTML = `Hello ${userName.value}, hope your are doing good! Enter your Birth date to check you born in leap year or not`
 })
 
 btn.addEventListener(
     "click",
     function eventhandler() {
+
       nameout.innerHTML = userName.value;
     let input = date.value;
+    nameout.innerHTML = `Hello ${userName.value}, hope your are doing good! Enter your Birth date to check you born in leap year or not`
     if(userName.value===0){
         alert("Please enter your name")
     }

@@ -51,11 +51,12 @@ body{
 .input{
     padding: 1rem;
     border-radius:15px ;
+    margin: 10px;
     border: none;
 }
 .click{
     background-color: var(--navbar-color);
-    width: 11rem;
+    width: 20rem;
     height: 3rem;
     border-radius: 20px;
     border: none;
@@ -66,12 +67,13 @@ body{
     padding: 0.7rem;
     margin: 1rem;
     border: none;
+    width: 15rem;
     border-radius: 20px;
     background-color: var(--navbar-color);
     
     text-align: center;
 }
 .nameot{
-    padding-bottom: 1rem;
+    padding-bottom: auto;
     margin: auto;
 }
